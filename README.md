@@ -1,4 +1,4 @@
-# TechInterview
+# Inception Technical Interview Project
 This is the inception Technical Interview Project
 
 Techstack: VueJS 2.0, Vuetify 2, and Vue CLI and NodeJS 16.20
