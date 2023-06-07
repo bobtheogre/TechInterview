@@ -1,3 +1,7 @@
+<template>
+  <DataTable />
+</template>
+
 <script>
   import DataTable from "../components/DataTable";
 
@@ -5,11 +9,7 @@
     name: "DataTable",
 
     components: {
-      DataTable,
-    },
+      DataTable
+    }
   };
 </script>
-
-<template>
-  <DataTable />
-</template>
