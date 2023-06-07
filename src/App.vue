@@ -2,6 +2,7 @@
   <v-app>
     <v-app-bar
       app
+      absolute
       color="primary"
       dark
     >
@@ -24,20 +25,27 @@
           width="100"
         />
       </div>
-
+      
       <v-spacer />
+
+      <v-btn to="/">HOME</v-btn>
+      <v-btn to="/about">ABOUT</v-btn>
+      <v-btn to="/data">DATA</v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer>
+    <!-- <v-navigation-drawer>
       <v-list>
-        <li
-          v-for="item in navItems"
+        <v-list-tile
+          v-for="item in menuItems"
           :key="item.title"
-        >
-          <a :href="item.path">{{ item.title }}</a>
-        </li>
+          :to="item.path">
+          <v-list-tile-action>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>{{ item.title }}</v-list-tile-content>
+        </v-list-tile>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
 
     <v-main>
       <router-view />
