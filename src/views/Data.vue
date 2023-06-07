@@ -6,10 +6,10 @@
   import DataTable from "../components/DataTable";
 
   export default {
-    name: "DataTable",
+    name: "DataPage",
 
     components: {
-      DataTable
+      "DataTable": DataTable
     }
   };
 </script>
