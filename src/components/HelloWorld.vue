@@ -14,13 +14,28 @@
         />
       </v-col>
       <v-col cols="6">
-    <v-row>
-    Something seems to be wrong. There should be a nav up there ^^^
+        <v-row>
+          Something seems to be wrong. There should be a nav up there ^^^
+        </v-row>
+        <v-row>
+          Add a nav to the view /data.
+        </v-row>
+      </v-col>
     </v-row>
     <v-row>
-      Add a nav to the view /data.
+      <v-col cols="12">
+        <h2>Additional Resources</h2>
+      </v-col>
     </v-row>
-    </v-col>
+    <v-row>
+      <v-list>
+        <v-list-item
+          v-for="link in importantLinks"
+          :key="link.href"
+        >
+          <a :href="link.href">{{ link.text }}</a>
+        </v-list-item>
+      </v-list>
     </v-row>
   </v-container>
 </template>
