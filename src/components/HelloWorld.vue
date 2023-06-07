@@ -22,20 +22,40 @@
         </v-row>
       </v-col>
     </v-row>
-    <v-row>
-      <v-col cols="12">
-        <h2>Additional Resources</h2>
+    <v-row class="mx-auto">
+      <v-col cols="4">
+        <h2>Ecosystem</h2>
+        <v-list>
+          <v-list-item
+            v-for="link in ecosystem"
+            :key="link.href"
+          >
+            <a :href="link.href">{{ link.text }}</a>
+          </v-list-item>
+        </v-list>
       </v-col>
-    </v-row>
-    <v-row>
-      <v-list>
-        <v-list-item
-          v-for="link in importantLinks"
-          :key="link.href"
-        >
-          <a :href="link.href">{{ link.text }}</a>
-        </v-list-item>
-      </v-list>
+      <v-col cols="4">
+        <h2>Important Links</h2>
+        <v-list>
+          <v-list-item
+            v-for="link in importantLinks"
+            :key="link.href"
+          >
+            <a :href="link.href">{{ link.text }}</a>
+          </v-list-item>
+        </v-list>
+      </v-col>
+      <v-col cols="4">
+        <h2>What's Next</h2>
+        <v-list>
+          <v-list-item
+            v-for="link in whatsNext"
+            :key="link.href"
+          >
+            <a :href="link.href">{{ link.text }}</a>
+          </v-list-item>
+        </v-list>
+      </v-col>
     </v-row>
   </v-container>
 </template>
