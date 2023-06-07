@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="6">
         <h2>Welcome to the Tech Interview</h2>
-        Youre doing great so far. Keep it up.
+        You're doing great so far. Keep it up.
         <v-img
           alt="Cat with hat"
           class="shrink mr-2"
