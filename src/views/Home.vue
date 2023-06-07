@@ -11,6 +11,6 @@
 </script>
 
 <template>
-  <hello-world />
+  <HelloWorld />
 </template>
 
