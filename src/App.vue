@@ -1,6 +1,10 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -21,8 +25,19 @@
         />
       </div>
 
-      <v-spacer></v-spacer>
+      <v-spacer />
     </v-app-bar>
+
+    <v-navigation-drawer>
+      <v-list>
+        <li
+          v-for="item in navItems"
+          :key="item.title"
+        >
+          <a :href="item.path">{{ item.title }}</a>
+        </li>
+      </v-list>
+    </v-navigation-drawer>
 
     <v-main>
       <router-view />
@@ -34,8 +49,13 @@
 export default {
   name: "App",
 
-  data: () => ({
-    //
-  }),
-};
+  data() {
+    return {
+      navItems: [
+        { title: "About", path: "/about", icon: "fa-question-circle" },
+        { title: "Home", path: "/", icon: "home" }
+      ]
+    }
+  }
+}
 </script>
