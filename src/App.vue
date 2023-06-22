@@ -1,6 +1,10 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -21,7 +25,10 @@
         />
       </div>
 
-      <v-spacer></v-spacer>
+      <v-spacer />
+
+      <NavBar />
+      
     </v-app-bar>
 
     <v-main>
@@ -31,11 +38,19 @@
 </template>
 
 <script>
+import NavBar from './components/NavBar.vue';
+
 export default {
   name: "App",
+
+  components: {
+    NavBar
+  },
 
   data: () => ({
     //
   }),
+
+ 
 };
 </script>
