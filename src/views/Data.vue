@@ -6,7 +6,7 @@
 import DataTable from "../components/DataTable.vue";
 
 export default {
-  name: "Data",
+  name: "DataView",
 
   components: {
     DataTable,
