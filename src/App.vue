@@ -22,6 +22,14 @@
       </div>
 
       <v-spacer></v-spacer>
+      <v-toolbar dense>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn text to="/">Home</v-btn>
+        <v-btn text to="/about">About</v-btn>
+        <v-btn text to="/data">Data</v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
     </v-app-bar>
 
     <v-main>
