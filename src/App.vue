@@ -22,6 +22,20 @@
       </div>
 
       <v-spacer></v-spacer>
+      
+      <!-- Navigation Items -->
+      <v-btn plain rounded to="/">
+        <v-icon>mdi-home</v-icon>
+        Home
+      </v-btn>
+      <v-btn plain rounded to="/data">
+        <v-icon>mdi-table</v-icon>
+        Data
+      </v-btn>
+      <v-btn plain rounded to="/about">
+        <v-icon>mdi-information-outline</v-icon>
+        About
+      </v-btn>
     </v-app-bar>
 
     <v-main>
