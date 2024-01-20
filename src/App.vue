@@ -22,6 +22,33 @@
       </div>
 
       <v-spacer></v-spacer>
+
+      <div class="row">
+        <v-btn-toggle
+          v-model="text"
+          tile
+          group
+        >
+          <v-btn to="/" >
+            <span>Home</span>
+          
+            <v-icon>mdi-home-circle</v-icon>
+          </v-btn>
+    
+          <v-btn to="/data" >
+            <span>Data Table</span>
+          
+            <v-icon>mdi-table</v-icon>
+          </v-btn>
+
+          <v-btn to="/about" >
+            <span>About</span>
+          
+            <v-icon>mdi-information</v-icon>
+          </v-btn>
+        </v-btn-toggle>
+      </div>
+
     </v-app-bar>
 
     <v-main>
