@@ -22,6 +22,19 @@
       </div>
 
       <v-spacer></v-spacer>
+
+      <div class="row" style="text-align: left;">
+        <a href="/" class="custom-btn" style="color: white; margin-right: 10px;">
+          <span>Home</span>
+        </a>
+        <a href="/data" class="custom-btn" style="color: white; margin-right: 10px;">
+          <span>Data</span>
+        </a>
+        <a href="/about" class="custom-btn" style="color: white;">
+          <span>About</span>
+        </a>
+      </div>
+
     </v-app-bar>
 
     <v-main>
