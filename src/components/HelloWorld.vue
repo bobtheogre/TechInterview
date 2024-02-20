@@ -18,7 +18,7 @@
     Something seems to be wrong. There should be a nav up there ^^^
     </v-row>
     <v-row>
-      Add a nav to the view /data.
+      Solved: Add a nav to the view /data.
     </v-row>
     </v-col>
     </v-row>
