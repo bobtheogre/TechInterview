@@ -6,8 +6,10 @@
             Data Table
           </v-card-title>
           <v-card-subtitle><p>Uh oh. There is nothing there. Using the data at <a href="https://random-data-api.com/">https://random-data-api.com/</a>, populate the table
-          below with headers and make it searchable. Also, expand the table to full width of the container. Let Bob know when complete.</p></v-card-subtitle>
-          <v-data-table :headers="headers" :items="items" :search="search" class="elevation-1">
+          below with headers and make it searchable. Also, expand the table to full width of the container. Let Bob know when complete.</p>
+            <v-text-field v-model="search" label="Search" outlined></v-text-field>
+          </v-card-subtitle>
+          <v-data-table :headers="headers" :items="items" :search="search" class="elevation-1" >
             <template v-slot:items="props">
               <td>{{ props.item.credit_card_number }}</td>
               <td>{{ props.item.credit_card_expiry_date }}</td>
